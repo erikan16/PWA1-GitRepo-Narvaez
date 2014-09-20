@@ -6,7 +6,7 @@
  
 (function(){		// Main function
 
-    console.log("FIGHT!!!");    // Prints out to your console 
+    console.log("FIGHT!!!");    // Prints out to the console log
 
     var fighter1_txt = document.querySelector("#kabal").querySelector("p");   // assigning variables to access the DOM for fighter 1
     var fighter2_txt = document.querySelector("#kratos").querySelector("p");   // assigning variables to access the DOM for fighter 2
@@ -21,12 +21,12 @@
         {
             name:"Kabal",   // name will represent fighter[0].name = Kabal
             damage:20,      // damage will represent amount to be inflicted by fighter
-            health:100      // health will represents fighters starting health
+            health:100      // health will represent fighters starting health
     },
         {
             name:"Kratos",   // name will represent fighter[1].name = Kratos
-            damage:20,       // damage will represents amount to be inflicted by fighter
-            health:100      // health will represents fighters starting health
+            damage:20,       // damage will represent amount to be inflicted by fighter
+            health:100      // health will represent fighters starting health
      }];
 
     var round = 1;  // variable round equals one
@@ -37,8 +37,8 @@
 
     function fight(){		// function is calling the parameters from above and placing it into a function called fight()
 
-        fighter1_txt.innerHTML = fighters[0].name + ":" + " " + fighters[0].health;   // Displays .name + . health for fighter one on top of html page
-        fighter2_txt.innerHTML = fighters[1].name + ":" + " " + fighters[1].health;   // Displays .name + . health for fighter two on top of html page
+        fighter1_txt.innerHTML = fighters[0].name + ":" + " " + fighters[0].health;   // Displays .name + . health for fighter is displayed
+        fighter2_txt.innerHTML = fighters[1].name + ":" + " " + fighters[1].health;   // Displays .name + . health for fighter two is displayed 
 
         //calculates fighter [0] random number + .damage (20) * .5 first then rounds it to the nearest number
         var f1 = Math.floor(Math.random() * fighters[0].damage + fighters[0].damage * .5);
@@ -79,7 +79,7 @@
 
          }else if (fighters[0].health < 1){                         // else if occurs if fighter1's health is greater than 1 the below will occur
              result = fighters[1].name + " " + "WINS!!!"            // result will display "Kabal WINS!!!"
-             
+
          }else if (fighters[1].health < 1) {                         // else if occurs if fighter2's health is greater than 1 the below will occur
              result = fighters[0].name + " " + "WINS!!!"            // result will display "Kratos WINS!!!"
          }
