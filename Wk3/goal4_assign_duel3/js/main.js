@@ -73,12 +73,14 @@
 
      function  winnerCheck() {		//outputs the count of the rounds until the function below results = no winner or a winner
          var result = "no winner";      // results equal "no winner" loop
-         if (fighters[0].health < 1 && fighters[1].health < 1) {    // fighter1 and fighter2 health is less then 1
+         if (fighters[0].health < 1 && fighters[1].health < 1) {    // fighter1 and fighter2 health is less then 1 the below will occur
 
              result = "You Both Die - GAME OVER!";                  // result will display "You Both Die - GAME OVER"
-         }else if (fighters[0].health < 1){                         // else if occurs if fighter1's health is greater than 1
+
+         }else if (fighters[0].health < 1){                         // else if occurs if fighter1's health is greater than 1 the below will occur
              result = fighters[1].name + " " + "WINS!!!"            // result will display "Kabal WINS!!!"
-         }else if (fighters[1].health < 1) {                         // else if occurs if fighter2's health is greater than 1
+             
+         }else if (fighters[1].health < 1) {                         // else if occurs if fighter2's health is greater than 1 the below will occur
              result = fighters[0].name + " " + "WINS!!!"            // result will display "Kratos WINS!!!"
          }
          return result;		//this is being called by the var result = winnerCheck() above to keep looping until the result is someone losses or both die
