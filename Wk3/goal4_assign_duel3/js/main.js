@@ -38,7 +38,7 @@
     function fight(){		// function is calling the parameters from above and placing it into a function called fight()
 
         fighter1_txt.innerHTML = fighters[0].name + ":" + " " + fighters[0].health;   // Displays .name + . health for fighter is displayed
-        fighter2_txt.innerHTML = fighters[1].name + ":" + " " + fighters[1].health;   // Displays .name + . health for fighter two is displayed 
+        fighter2_txt.innerHTML = fighters[1].name + ":" + " " + fighters[1].health;   // Displays .name + . health for fighter two is displayed
 
         //calculates fighter [0] random number + .damage (20) * .5 first then rounds it to the nearest number
         var f1 = Math.floor(Math.random() * fighters[0].damage + fighters[0].damage * .5);
@@ -78,10 +78,10 @@
              result = "You Both Die - GAME OVER!";                  // result will display "You Both Die - GAME OVER"
 
          }else if (fighters[0].health < 1){                         // else if occurs if fighter1's health is greater than 1 the below will occur
-             result = fighters[1].name + " " + "WINS!!!"            // result will display "Kabal WINS!!!"
+             result = fighters[1].name + " " + "WINS!!!";            // result will display "Kabal WINS!!!"
 
          }else if (fighters[1].health < 1) {                         // else if occurs if fighter2's health is greater than 1 the below will occur
-             result = fighters[0].name + " " + "WINS!!!"            // result will display "Kratos WINS!!!"
+             result = fighters[0].name + " " + "WINS!!!";            // result will display "Kratos WINS!!!"
          }
          return result;		//this is being called by the var result = winnerCheck() above to keep looping until the result is someone losses or both die
         }
