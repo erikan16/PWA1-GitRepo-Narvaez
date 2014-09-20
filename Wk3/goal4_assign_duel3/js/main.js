@@ -31,7 +31,7 @@
 
     var round = 1;  // variable round equals one
 
-    round_txt.innerHTML = "Click Fight Button to Start!";       // calling round_txt which equal h5 tag in html page
+    round_txt.innerHTML = "Click Fight Button to Start!";       // calling round_txt which represents the h5 tag in html page
     fighter1_txt.innerHTML = fighters[0].name + ":" + " " + fighters[0].health;     // Displays .name + . health for fighter one on top of html page
     fighter2_txt.innerHTML = fighters[1].name + ":" + " " + fighters[1].health;     // Displays .name + . health for fighter two on top of html page
 
