@@ -72,7 +72,7 @@
     }
 
      function  winnerCheck() {		//outputs the count of the rounds until the function below results = no winner or a winner
-         var result = "no winner";      // results equal "no winner" if the below occurs
+         var result = "no winner";      // results equal "no winner" loop
          if (fighters[0].health < 1 && fighters[1].health < 1) {    // fighter1 and fighter2 health is less then 1
 
              result = "You Both Die - GAME OVER!";                  // result will display "You Both Die - GAME OVER"
